@@ -1,0 +1,298 @@
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 25%;
+    left: 0; 
+    margin: 0 auto; 
+    z-index: 99999999999999;
+}
+
+.contenedorFormulario{
+    background-color: rgb(94, 94, 94);
+    padding: 3rem 3rem;
+    flex-direction: column;
+    display: none;
+    max-width: 100%;
+    border-radius: 10px;
+    height: 100%;
+    transform: translate(0, 20rem);
+    position: absolute;
+    z-index: 9999999;
+}
+
+.titleForm {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.contenedorInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    border: none;
+    height: 3rem;
+    width: 99%;
+    min-width: 25rem;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 0 1rem;
+    color: #fff;
+    margin: .5rem 0;
+    font-size: 1.2rem;
+
+}
+input:active, :focus{
+    background-color: rgb(73, 73, 73);
+}
+input::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+
+textarea{
+    border: none;
+    margin: .5rem 0;
+    width: 100%;
+    min-width: 25rem;
+    background-color: #000;
+    border-radius: 10px;
+    padding: .5rem 1rem ;
+    color: #fff;
+    font-size: 1.2rem;
+}
+textarea::placeholder{
+    color: #fff;
+    font-size: 1rem;
+}
+.botoncito button {
+    font-size: 1.3rem;
+    padding: .6rem 2.5rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ed1c24;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+}
+
+.requestForm{
+    height: 15vh;
+}
+
+
+@keyframes animacionBtn {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(1deg)
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+.animacionFormulario {
+    animation: formDescubierto 500ms ease forwards;
+}
+
+@keyframes formDescubierto {
+    form{
+        opacity: 0;
+    }
+    to{
+        transform: translate(0, -10rem);
+        opacity: 1;
+    }
+}
+
+
+
+@media (max-width: 750px) {
+    
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0; 
+    margin: 0 auto; 
+    z-index: 99999999999999;
+}
+
+.contenedorFormulario{
+    background-color: rgb(94, 94, 94);
+    padding: 3rem 3rem;
+    flex-direction: column;
+    display: none;
+    max-width: 100%;
+    border-radius: 0;
+    height: 100%;
+    transform: translate(0, 20rem);
+    z-index: 999999999;
+}
+
+.titleForm {
+    text-align: center;
+    font-size: 1rem;
+    padding: 1rem;
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 3px solid #fff;
+    margin-bottom: 1rem;
+}
+
+.contenedorInputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input {
+    border: none;
+    height: 2rem;
+    width: 99%;
+    min-width: 300px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: 0 1rem;
+    color: #fff;
+
+}
+input:active, :focus{
+    background-color: rgb(73, 73, 73);
+}
+input::placeholder{
+    color: #fff;
+    font-size: 12px;
+}
+
+textarea{
+    border: none;
+    margin: .5rem 0;
+    width: 100%;
+    min-width: 300px;
+    background-color: #000;
+    border-radius: 10px;
+    padding: .5rem 1rem ;
+    color: #fff;
+    font-size: 12px ;
+}
+textarea::placeholder{
+    color: #fff;
+    font-size: 1rem;
+}
+.botoncito button {
+    font-size: 1rem;
+    padding: .5rem 2rem;
+    border: 0;
+    border-radius: 10px;
+    background-color: #ed1c24;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+.btnRequestForm{
+    background-color: #ed1c24;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    color: #fff;
+    position: absolute;
+    bottom: 30%;
+    left: 30%;
+    margin: 0 auto;
+    right: inherit;
+}
+
+.btnRequestForm:hover{
+    background-color: rgb(97, 37, 37);
+    animation: animacionBtn 100ms ease infinite;
+}
+}
+
+
+/*animacion create*/
+.svgWeCreate{
+    width: 35vw;
+    height: 35vw;
+}
+
+.createSvg{
+    width: 20vw;
+    height: 20vw;
+}
+
+.mediakit {
+    width: 18vw;
+    max-width: 11rem;
+    min-width: 8rem;
+    padding-top: 1rem;
+}
+
+@media(max-width: 1000px) {
+    .mediakit{
+        padding: .5rem 0 0 0;
+        margin: 0;
+    }
+}
+
+
+.btnDeCerrado{
+    width: 30px;
+    height: 30px;
+    margin-left: 100%;
+    background-color: #ed1c24;
+    border: none;
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+@media (max-width: 1000px) {
+    .btnDeCerrado{
+        width: 30px;
+        height: 30px;
+        margin-left: 95%;
+        background-color: #ed1c24;
+        border: none;
+        color: #fff;
+        font-weight: 900;
+        cursor: pointer;
+        border-radius: 50%;
+    }
+}
+
+
+body::-webkit-scrollbar{
+    width: 8px;
+    background-color: rgb(97, 97, 97);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ed1c24;
+    width: 6px;
+    border-radius: 20px;
+    padding: 5px;
+}

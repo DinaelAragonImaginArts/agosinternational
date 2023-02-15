@@ -1,0 +1,124 @@
+
+/*=============================================================================
+            about us ||diccionario||
+===============================================================================*/
+
+/*Diccionario */
+.diccionario {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+ #efecto{
+     font-size: 3vw;
+     color: #fff;
+     font-family: 'Times New Roman', Times, serif;
+ }
+
+#table {
+	width: 75%;
+    color: #fff;
+}
+
+#centeralign {
+	vertical-align: middle;
+    height: 50vh;
+}
+.contenedorDiccionario{
+    position: relative;
+}
+
+@media (max-width: 1000px) {
+    #efecto{
+        font-size: 5vw;
+    }
+    #table {
+        width: 90%;
+    }
+}
+
+/*=============================================================================
+            about us ||Friends that create together grow together||
+===============================================================================*/
+.contenedorFriends{
+    height: 100vh;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.friendsCreate {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.friendsCreate svg {
+    width: 80%;
+    margin: 10rem auto;
+    height: 60%;
+}
+
+
+.definition {
+    display: flex;
+}
+
+@media(max-width: 1200px){
+    .friendsCreate svg {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+@media(max-width: 700px){
+    .friendsCreate {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .friendsCreate svg {
+        width: 100%;
+        margin-top: 10rem;
+    }
+}
+
+/*=============================================================================
+            about us ||Valores||
+===============================================================================*/
+
+.valoresContenedor{
+    height: 100vh;
+    text-align: center;
+}
+.valoresContenedor h2{
+    margin-top: 30rem;
+    position: absolute;
+}
+
+.valoresJson{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+/*=============================================================================
+            about us ||the world is big life short thats why we dare||
+===============================================================================*/
+.theWorld {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+

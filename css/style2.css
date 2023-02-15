@@ -1,0 +1,85 @@
+
+.friendsCreate{
+    height: 100vh;
+    margin: 0;
+}
+/**/
+.animacionVideo{
+    animation: zoomIn 2s ease-out forwards;
+}
+.animacionVideoEntrada{
+    animation: zoomOut 1s ease-out forwards;
+}
+
+
+@keyframes zoomIn {
+    from{
+        opacity: 1;
+        transform: scale(100%);
+    }
+    to{ 
+        opacity: 0;
+        transform: scale(200%);
+    }
+}
+@keyframes zoomOut {
+    0%{
+        opacity: 0;
+        transform: scale(230%);
+    }
+    100%{
+        opacity: 1;
+        transform: scale(100%);
+    }
+}
+
+
+
+
+.contenedorWorld{
+    height: 100vh;
+    width: 92%;
+    margin: 0 auto;
+}
+
+.spacer{
+    height: 10vh;
+    width: 100%;
+}
+
+
+/*=============================================================================
+            Show case Css
+===============================================================================*/
+
+.showCaseContainer {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.contenidoShowCase{
+    display: grid;
+    grid-template-columns: 1fr 90% 1fr;
+    grid-template-rows: 1fr 90% 1fr;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.video {
+    width: 100%;
+}
+
+.mascaraVideo {
+    font-size: 6vw;
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.80)!important;
+    cursor: pointer;
+}
+
+
+
+.down{
+    width: 2.5rem;
+}

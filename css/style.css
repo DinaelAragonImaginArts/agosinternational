@@ -1,0 +1,521 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box!important;
+}
+
+html {
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    overflow-x: hidden;
+  }
+body {
+    font-family: 'Red Hat Display';
+    background-color: #000;
+    color:#fff;
+}
+img {
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-size: 8vh;
+}
+li {
+    list-style: none;
+    font-size: .9rem;
+}
+:root {
+    --rojoAgos: #ed1c24;
+    --negro: #000;
+}
+
+.lottieAnimation {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    z-index: 9999999999;
+}
+
+/*Header*/
+.headerContainer {
+    width: 100%;
+    height: 6vh;
+}
+
+.logo {
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    background-color: #000;
+    z-index: 999999999;
+    top: 0;
+}
+
+.contenedorLogo{
+    width: 92%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.logotipo{
+    width: 13rem;
+    padding: 2rem 0 2rem 2rem;
+    cursor: pointer;
+    z-index: 9999999999;
+}
+.mediakit{
+    width: 6rem;
+    padding: 1rem 2rem 0 0;
+    cursor: pointer;
+} 
+
+
+
+
+@media(max-width: 750px) {
+    .contenedorLogo{
+        width: 92%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .mediaKitContenedor{
+        display: flex;
+        justify-content: center;
+    }
+    .mediaKitContenedor span{
+        display: none;
+    }
+    .mediakit{
+        width: 3rem;
+        padding: 0;
+        margin: 1rem 0 0 0 ;
+    }
+    .logotipo{
+        width: 10rem;
+        padding: 0;
+    }
+}
+
+
+.navegacion {
+    display: grid;
+    grid-template-rows: repeat(auto-fit(15px));
+    list-style: none;
+    text-align: center;
+    position: fixed;
+    right: 5vw;
+    padding: 1rem;
+    line-height: 5vh;
+    z-index: 99999999999;
+    top: 10rem;
+}
+.guiones{
+    letter-spacing: -2.5px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.contenido {
+    font-size: 1.8rem;
+    margin: 0 auto;
+    width: 100%;
+    display: grid;
+    justify-items: center;
+}
+
+
+.animacion-entrada {
+    animation: entradaTexto 2s ease forwards;
+}
+.animacion-salida{
+    animation: salidaTexto 2s ease forwards;
+}
+
+@keyframes salidaTexto {
+    from {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    to{
+        opacity: 0;
+        transform: translate(-60rem, 0);
+        display: none;
+    }
+}
+
+
+@keyframes entradaTexto {
+    0% {
+        opacity: 0;
+        transform: translate(50rem, 0);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+}
+
+
+
+
+.inicio {
+    animation: rotate 1.2s forwards;
+}
+
+.primerPalabra {
+    animation: grow 1.5s ease-in forwards;
+}
+.friendAnimation {
+    animation: friend 1s ease-in forwards;
+    animation-delay: 50ms;
+}
+
+.createAnimation {
+    animation: create 1s ease-in forwards;
+    animation-delay: 50ms;
+}
+.togetherAnimation{
+    animation: together 1s ease-in forwards;
+    animation-delay: 50ms;
+}
+.together2Animation {
+    animation: together2 1s ease-in forwards;
+    animation-delay: 50ms;
+}
+
+    
+@keyframes grow  {
+    from{
+        width: 0;
+
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes friend {
+    from {
+        opacity: 0;
+    }
+    to{
+        transform: translate(0, -10rem);
+        height: 30vh;
+    }
+}
+@keyframes create {
+    from {
+        opacity: 0;
+
+    }
+    to{
+        transform: translate(0, -5rem);
+        height: 30vh;
+    
+    }
+}
+@keyframes together {
+    from {
+        opacity: 0;
+    
+
+    }
+    to {
+        transform: translate(0, -2px);
+        height: 30vh;
+    
+    }
+}
+@keyframes together2 {
+    from {
+        opacity: 0;
+    
+
+    }
+    to {
+        transform: translate(0, 10rem);
+        height: 35vh;
+        width: auto;
+    }
+}
+
+.animationWorld{
+    animation: animationHorizontalDerecha 300ms ease-in forwards;
+    animation-delay: 500ms;
+}
+.animationBig {
+    animation: animationHorizontalDerecha 300ms ease-in forwards;
+    animation-delay: 500ms;
+}
+.animationLife{
+    animation: animationHorizontalIzquierda 300ms  ease-in forwards;
+    animation-delay: 1s;
+}
+.animationShort {
+    animation: animationHorizontalIzquierda 300ms ease-in forwards;
+    animation-delay: 1s;
+}
+.animationThat {
+    animation: animationVertical 300ms ease-in forwards;
+    animation-delay: 1.5s;
+}
+.animationWhy {
+    animation: animationVertical 300ms ease-in forwards;
+    animation-delay: 1.5s;
+}
+.animationWe {
+    animation: animationHorizontalDerecha 300ms ease-in forwards;
+    animation-delay: 2s;
+}
+.animationDare {
+    animation: animationHorizontalDerecha 300ms ease-in forwards;
+    animation-delay: 2s;
+}
+
+.animationFlecha {
+    animation: animationFlecha 300ms ease-in forwards;
+    animation-delay: 2s;
+}
+
+.animationRedFill{
+    animation: fadetranslate 800ms ease forwards;
+    animation-delay: 2.5s;
+}
+
+.animacionThe{
+    animation: animacionUp 500ms ease-in forwards;
+}
+
+
+
+
+@keyframes animationHorizontalIzquierda {
+    from {
+        opacity: 0;
+        transform: translate(-30rem, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes animationVertical {
+    from {
+        opacity: 0;
+        transform: translate(0, -4rem);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0 , 0);
+    }
+}
+
+@keyframes animationHorizontalDerecha {
+    from {
+        opacity: 0;
+        transform: translate(30rem, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes fadetranslate {
+    from  {
+        
+    }
+    to {
+        transform: translate(.5rem, -.4rem);
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    from{
+
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+/* Friends create together grow*/
+
+.animacionContorno {
+    animation: fadetranslate 800ms ease forwards;
+    animation-delay: 2.3s;
+}
+.animacionFade {
+    animation: fade 800ms ease forwards;
+    animation-delay: 2s;
+}
+
+.stLine {
+    opacity: 0;
+}
+.cls-1 {
+    fill: #ed1c24;
+    opacity: 0;
+}
+
+.stWhite {
+    fill: #fff;
+    opacity: 0;
+}
+.stRed{
+    fill:#ed1c24;
+    stroke:#ed1c24;
+    stroke-miterlimit:10;
+    opacity: 0;
+    }
+.stLine{
+    fill: none;
+    stroke: #ed1c24;
+    stroke-width: 3;
+}
+
+.thatFriends{
+    opacity: 0;
+}
+
+.dareUs{
+    font-size: 387.01px;
+    font-weight: 800;
+    letter-spacing: -.04em;
+    fill: #fff;
+    font-family: RedHatDisplay-SemiBoldItalic, Red Hat Display;
+    opacity: 0;
+}
+
+.withUs{
+    font-size: 354px;
+    font-family: RedHatDisplay-SemiBoldItalic, Red Hat Display;
+    font-weight: 600;
+    font-style: italic;
+    fill: #f50000;
+    opacity: 0;
+}
+
+.us {
+    fill: #fff;
+    opacity: 0;
+}
+.withUsSinFill{
+    font-size:354px;
+    font-family:RedHatDisplay-SemiBoldItalic,Red Hat Display;
+    font-weight:600;
+    font-style:italic;
+    fill:none;
+    stroke:#f50000;
+    stroke-miterlimit:10;
+    stroke-width:3px
+}
+
+.animacionHorizontal1 {
+    animation: animacionIzquierda 500ms ease-in forwards;
+    animation-delay: 1s;
+}
+.animacionHorizontal2 {
+    animation: animacionDerecha 500ms ease-in forwards;
+    animation-delay: 1.5s
+}
+.animacionHorizontal3 {
+    animation: animacionIzquierda 500ms ease-in forwards;
+    animation-delay: 2s
+}
+
+.animacionVertical1{
+    animation: animacionUp2 500ms ease-in forwards;
+    animation-delay: 1ms;
+}
+
+.animacionVertical2{
+    animation: animacionUp 500ms ease-in forwards;
+    animation-delay: 1.5s;
+}
+.animacionVertical3{
+    animation: animacionDown 700ms ease forwards;
+    animation-delay: 2.5s;
+}
+
+@keyframes animacionIzquierda {
+    from {
+        opacity: 0;
+         transform: translate(-50rem, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes animacionDerecha {
+    from {
+        opacity: 0;
+         transform: translate(50rem, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes animacionUp {
+    from {
+        opacity: 0;
+         transform: translate(0, 5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes animacionUp2 {
+    from {
+        opacity: 0;
+         transform: translate(0, 8rem);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+@keyframes animacionDown {
+    from {
+        opacity: 0;
+         transform: translate(0, -5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.goToTop{
+    position: fixed;
+    bottom: 5vh;
+    right: 5%;
+    padding: 2rem;
+}
+
+.btnTop {
+    padding: .4rem 2.2rem;
+    background-color: #ed1c24;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .btnTop{
+        display: none;}
+}

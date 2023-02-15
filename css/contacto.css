@@ -1,0 +1,165 @@
+/*=============================================================================
+            about us ||Valores||
+===============================================================================*/
+body{
+    background-color: #000;
+    color: #fff;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.cajaContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cajaInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    height: 40vh;
+}
+.titleContact h3{
+    font-size: 5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    height: 15vh;
+}
+.infoContext{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.infoInfo{
+    text-align: center;
+    padding: 1rem 5px;
+}
+
+.infoInfo h4 {
+    font-size: 2.5rem;
+}
+
+.infoInfo p{
+    font-size: 1.5rem;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.titleSocial{
+    text-align: center;
+    font-size: 3em;
+}
+
+.iconosSocial{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.icon{
+    padding: 1rem;
+}
+
+.icon img {
+    width: 3.5rem;
+}
+
+.cajaFormulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cajaFormulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btnRequest button {
+    padding: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #ed1c24;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btnRequest button:hover{
+    background-color: #f80008;
+}
+
+
+.contenedorFormulario{
+    background-color: rgb(114, 112, 112);
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .titleContact h3{
+        font-size: 6vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        height: 15vh;
+    }
+    .titleSocial{
+        text-align: center;
+        font-size: 4vw;
+    }
+    .infoInfo h4 {
+        font-size: 2vw;
+    }
+
+    .infoInfo p{
+        font-size: 1.3vw;
+    }
+    .icon img {
+        width: 3vw;
+    }
+}
+
+@media (max-width: 500px) {
+    .titleContact h3{
+        font-size: 10vw;
+        text-transform: uppercase;
+        font-weight: 700;
+        text-align: center;
+        height: 15vh;
+    }
+    .titleSocial{
+        text-align: center;
+        font-size: 8vw;
+    }
+    .infoInfo h4 {
+        font-size: 5vw;
+    }
+
+    .infoInfo p{
+        font-size: 3.2vw;
+    }
+    .icon img {
+        width: 8vw;
+    }
+}

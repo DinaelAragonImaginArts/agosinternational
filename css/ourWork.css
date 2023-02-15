@@ -1,0 +1,238 @@
+#ourWork {
+    height: 100vh;
+}
+
+.contenedorWe{
+    padding-top: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 70%;
+}
+.wewewe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 100vh;
+    width: 22vw;
+    background-color: #ed1c24;
+    z-index: 99999;
+  }
+
+.itemWe h3{
+    font-size: 2.5rem;
+    padding: 3rem 2rem;
+    cursor: pointer;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.itemWe h3:hover {
+    color: #000000;
+}
+.contenidoWe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenidoWEWEWE {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    opacity: 0;
+    width: 50%;
+    left: 30%;
+    top: 20%;
+}
+.textoWeList{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70vh;
+    font-size: 1.8rem;
+}
+.svgWeCreate{
+    height: 20vh;
+    width: auto;
+    margin: auto 0;
+}
+@media (max-width: 1000px) {
+    #ourWork {
+        width: 100%;
+    }
+    .contenedorWe{
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .wewewe {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 8rem;
+        width: 100%;
+      }
+      .itemWe{
+          width: auto;
+      }
+    
+    .itemWe h3{
+        font-size: 2rem;
+        cursor: pointer;
+        white-space: nowrap;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        width: auto;
+    }
+
+    .contenidoWEWEWE {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        padding-top: 1rem;
+        right: inherit!important;
+    }
+    .textoWeList{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        line-height: 30px;
+        height: 70vh;
+        font-size: 2rem;
+        width: 98%;
+        white-space: nowrap;
+    }
+
+
+    .textoWeList:nth-child(1){
+        width: 98%;
+        white-space: normal;
+    }
+
+    .svgWeCreate{
+        height: 10rem;
+    }
+    .svgCreate{
+        height: 10rem;
+    }
+    
+    
+.contenidoAnalize{
+    position: absolute;
+    left: 0;
+    right: inherit!important;
+    padding-left: 1rem;
+}
+.contenidoCreate{
+    position: absolute;
+    left: 0;
+    right: inherit!important;
+    padding-left: 1rem;
+}
+.contenidoDeliver{
+    position: absolute;
+    left: 0;
+    right: inherit!important;
+    padding-left: 1rem;
+}
+
+}
+
+
+
+
+@media (max-width: 750px) {
+    #ourWork {
+        width: 100%;
+    }
+    .contenedorWe{
+        padding-top: 5rem;
+        display: flex;
+        flex-direction: row;
+    }
+    .wewewe {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: 5rem;
+        width: 100%;
+      }
+      .itemWe{
+          width: 110px;
+      }
+    
+    .itemWe h3{
+        font-size: 1rem;
+        cursor: pointer;
+        white-space: nowrap;
+        text-transform: uppercase;
+        padding: 0 1rem;
+        width: auto;
+    }
+
+    .contenidoWEWEWE {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 90%;
+        padding-top: 2rem;
+        right: inherit!important;
+    }
+    .textoWeList{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        line-height: 30px;
+        height: 70vh;
+        font-size: 1rem;
+        width: 98%;
+        white-space: nowrap;
+    }
+
+
+    .textoWeList:nth-child(1){
+        width: 98%;
+        white-space: normal;
+    }
+
+    .svgWeCreate{
+        height: 10rem;
+    }
+    .svgCreate{
+        height: 10rem;
+    }
+    
+    
+.contenidoAnalize{
+    position: absolute;
+    left: 0;
+    right: inherit!important;
+    padding-left: 1rem;
+}
+.contenidoCreate{
+    position: absolute;
+    left: 0;
+    right: inherit!important;
+    padding-left: 1rem;
+}
+.contenidoDeliver{
+    position: absolute;
+    left: 0;
+    right: inherit!important;
+    padding-left: 1rem;
+}
+
+
+.ajust{
+    height: 50vh;
+    padding-top: 10vh;
+}
+}
+
+
+
+.colorActive {
+    color: #000000;
+}
